@@ -1,0 +1,7 @@
+/vendor/
+/var/
+/generated/
+/pub/media/
+/pub/static/
+/auth.json
+/.ddev/
