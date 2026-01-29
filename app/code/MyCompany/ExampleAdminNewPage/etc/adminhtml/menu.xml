@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+
+    <menu>
+        <!-- Parent menu -->
+        <add id="MyCompany_ExampleAdminNewPage::greetings"
+             title="Greetings"
+             module="MyCompany_ExampleAdminNewPage"
+             parent="Magento_Backend::content"
+             sortOrder="50"
+             resource="MyCompany_ExampleAdminNewPage::greetings"/>
+
+        <!-- Child menu -->
+        <add id="MyCompany_ExampleAdminNewPage::greetings_helloworld"
+             title="Hello World"
+             module="MyCompany_ExampleAdminNewPage"
+             parent="MyCompany_ExampleAdminNewPage::greetings"
+             action="exampleadminnewpage/helloworld/index"
+             sortOrder="10"
+             resource="MyCompany_ExampleAdminNewPage::greetings"/>
+    </menu>
+</config>
