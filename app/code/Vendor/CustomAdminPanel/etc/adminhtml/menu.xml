@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <!-- Main menu item -->
+        <add id="Vendor_CustomAdminPanel::main_menu" title="Custom Admin Panel" module="Vendor_CustomAdminPanel" sortOrder="100" resource="Vendor_CustomAdminPanel::main_menu"/>
+
+        <!-- Submenu item -->
+        <add id="Vendor_CustomAdminPanel::submenu" title="Sub Item" module="Vendor_CustomAdminPanel" sortOrder="10" parent="Vendor_CustomAdminPanel::main_menu" action="CustomAdminPanel/index/index" resource="Vendor_CustomAdminPanel::submenu"/>
+    </menu>
+</config>
