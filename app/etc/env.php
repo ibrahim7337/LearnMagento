@@ -18,7 +18,7 @@ return [
         'translate' => 1
     ],
     'backend' => [
-        'frontName' => 'admin'
+        'frontName' => 'secure_hash'
     ],
     'remote_storage' => [
         'driver' => 'file'
